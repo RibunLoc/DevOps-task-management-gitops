@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/RibunLoc/DevOps-work-management-web-platform.git
+    repoURL: https://github.com/RibunLoc/DevOps-task-management-gitops.git
     targetRevision: develop
     path: k8s-deployment/backend
 

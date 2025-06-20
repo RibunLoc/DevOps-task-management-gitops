@@ -7,7 +7,7 @@ metadata:
     app: web-frontend
 spec:
   replicas: 1
-  selector: 
+  selector:
     matchLabels:
       app: web-frontend
   template:
@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: frontend-container
-          image: ribun/taskmanagement_frontend:v2.0
+          image: ribun/taskmanagement_frontend:v2.0-20250620-173608
           ports:
             - containerPort: 5173
