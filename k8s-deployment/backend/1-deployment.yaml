@@ -56,7 +56,7 @@ spec:
     spec:
       containers:
         - name: auth-container
-          image: ribun/task-management-auth-service:v1.0
+          image: ribun/task-management-auth-service:v1.0-20250621-055754
           ports:
             - containerPort: 50051
           envFrom:
