@@ -14,7 +14,7 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-    - host: netsena.io.vn
+    - host: dev.netsena.io.vn
       http:
         paths:
           - path: /

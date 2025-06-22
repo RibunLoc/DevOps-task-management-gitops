@@ -14,7 +14,7 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-    - host: api.netsena.io.vn
+    - host: devapi.netsena.io.vn
       http:
         paths:
           - path: /api
