@@ -138,7 +138,7 @@ spec:
     spec:
       containers:
         - name: user-container
-          image: ribun/task-management-product-user-service:v3.0
+          image: ribun/task-management-product-user-service:v3.0-20250622-150931
           ports:
             - containerPort: 50053
           envFrom:
