@@ -6,5 +6,5 @@ metadata:
 data:
   env.js: |
     window.__ENV__ = {
-      VITE_API_BASE: "<path:secret/data/dev/app#VITE_API_BASE>"
+      VITE_API_BASE: "<path:secret/data/product/frontend#VITE_API_BASE>"
     };
