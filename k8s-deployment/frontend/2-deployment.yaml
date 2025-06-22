@@ -16,15 +16,13 @@ spec:
         app: web-frontend
     spec:
       containers:
-      - name: frontend-container
-        image: ribun/taskmanagement_frontend_product:v3.0-20250622-075356
-        ports:
-          - containerPort: 80
-        env:
-        - name: VITE_API_BASE
-          valueFrom:
-            configMapKeyRef:
-              name: frontend-config
-              key: VITE_API_BASE
-        
-
+        - name: frontend-container
+          image: ribun/taskmanagement_frontend_product:v3.0-20250622-142254
+          ports:
+            - containerPort: 80
+          env:
+            - name: VITE_API_BASE
+              valueFrom:
+                configMapKeyRef:
+                  name: frontend-config
+                  key: VITE_API_BASE
