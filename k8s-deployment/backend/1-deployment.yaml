@@ -97,7 +97,7 @@ spec:
     spec:
       containers:
         - name: task-container
-          image: ribun/task-management-product-task-service:v3.0
+          image: ribun/task-management-product-task-service:v3.0-20250622-150302
           ports:
             - containerPort: 50052
           envFrom:
