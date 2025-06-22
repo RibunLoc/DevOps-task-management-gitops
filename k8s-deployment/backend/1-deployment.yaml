@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: api-gateway-service
-  namespace: backend-dev
+  namespace: backend-product
 spec:
   replicas: 1
   selector:
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: api-gateway-container
-          image: ribun/task-management-api-gateway:v1.0
+          image: ribun/task-management-api-gateway:v3.0
           ports:
             - containerPort: 3000
           envFrom:
@@ -57,7 +57,7 @@ spec:
     spec:
       containers:
         - name: auth-container
-          image: ribun/task-management-auth-service:v1.0
+          image: ribun/task-management-auth-service:v3.0
           ports:
             - containerPort: 50051
           envFrom:
@@ -98,7 +98,7 @@ spec:
     spec:
       containers:
         - name: task-container
-          image: ribun/task-management-task-service:v1.0
+          image: ribun/task-management-task-service:v3.0
           ports:
             - containerPort: 50052
           envFrom:
@@ -140,7 +140,7 @@ spec:
     spec:
       containers:
         - name: user-container
-          image: ribun/task-management-user-service:v1.0
+          image: ribun/task-management-user-service:v3.0
           ports:
             - containerPort: 50053
           envFrom:

@@ -1,19 +1,19 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: backend-services
+  name: backend-services-product
   namespace: argocd
 spec:
   project: default
 
   source:
     repoURL: https://github.com/RibunLoc/DevOps-task-management-gitops.git
-    targetRevision: develop
+    targetRevision: product
     path: k8s-deployment/backend
 
   destination:
     server: https://kubernetes.default.svc
-    namespace: backend-dev
+    namespace: backend-product
   syncPolicy:
     automated:
       prune: true
