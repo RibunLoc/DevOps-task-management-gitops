@@ -13,7 +13,7 @@ spec:
       name: argocd-vault-plugin
   destination: 
     server: https://kubernetes.default.svc
-    namespace: mysql
+    namespace: mysql-dev
   syncPolicy:
     automated:
       prune: true

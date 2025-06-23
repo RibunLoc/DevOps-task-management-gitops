@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mysql
-  namespace: mysql
+  namespace: mysql-dev 
 spec:
   selector:
     matchLabels:
@@ -39,10 +39,10 @@ spec:
                 name: mysql-secret
                 key: DB_PASSWORD
           volumeMounts:
-            - name: mysql-storage
+            - name: mysql-storage-dev
               mountPath: /var/lib/mysql
       volumes:
-        - name: mysql-storage
+        - name: mysql-storage-dev
           persistentVolumeClaim:
-            claimName: mysql-pvc
+            claimName: mysql-pvc-dev
             
