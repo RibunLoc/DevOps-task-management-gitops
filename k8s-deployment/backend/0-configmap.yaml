@@ -10,7 +10,7 @@ data:
   MAIL_PASSWORD: <path:secret/data/dev/backend#MAIL_PASSWORD>
   MAIL_FROM: <path:secret/data/dev/backend#MAIL_FROM>
   DB_TYPE: <path:secret/data/dev/backend#DB_TYPE>
-  DB_HOST: <path:secret/data/dev/backend#DB_HOST>
+  DB_HOST: mysql.mysql-dev.svc.cluster.local
   DB_PORT: <path:secret/data/dev/backend#DB_PORT>
   DB_USERNAME: <path:secret/data/dev/backend#DB_USERNAME>
   DB_PASSWORD: <path:secret/data/dev/backend#DB_PASSWORD>
