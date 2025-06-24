@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: api-gateway-container
-          image: ribun/task-management-product-api-gateway:v3.0-20250623-145204
+          image: ribun/task-management-product-api-gateway:v3.0-20250624-152959
           ports:
             - containerPort: 3000
           envFrom:
