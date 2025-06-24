@@ -31,12 +31,12 @@ spec:
           livenessProbe:
             tcpSocket:
               port: 3000
-            initialDelaySeconds: 5
+            initialDelaySeconds: 30
             periodSeconds: 10
           readinessProbe:
             tcpSocket:
               port: 3000
-            initialDelaySconds: 5
+            initialDelaySconds: 30
             periodSeconds: 10
 ---
 apiVersion: apps/v1
@@ -72,12 +72,12 @@ spec:
           livenessProbe:
             tcpSocket:
               port: 50051
-            initialDelaySeconds: 5
+            initialDelaySeconds: 30
             periodSeconds: 10
           readinessProbe:
             tcpSocket:
               port: 50051
-            initialDelaySeconds: 5
+            initialDelaySeconds: 30
             periodSeconds: 10
 ---
 apiVersion: apps/v1
@@ -113,12 +113,12 @@ spec:
           livenessProbe:
             tcpSocket:
               port: 50052
-            initialDelaySeconds: 5
+            initialDelaySeconds: 30
             periodSeconds: 10
           readinessProbe:
             tcpSocket:
               port: 50052
-            initialDelaySeconds: 5
+            initialDelaySeconds: 30
             periodSeconds: 10
 ---
 apiVersion: apps/v1
@@ -154,10 +154,10 @@ spec:
           livenessProbe:
             tcpSocket:
               port: 50053
-            initialDelaySeconds: 5
+            initialDelaySeconds: 30
             periodSeconds: 10
           readinessProbe:
             tcpSocket:
               port: 50053
-            initialDelaySeconds: 5
+            initialDelaySeconds: 30
             periodSeconds: 10
