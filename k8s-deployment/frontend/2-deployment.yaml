@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: frontend-container
-          image: ribun/taskmanagement_frontend_product:v3.0-20250622-163005
+          image: ribun/taskmanagement_frontend_product:v3.0-20250624-152531
           ports:
             - containerPort: 80
           env:
